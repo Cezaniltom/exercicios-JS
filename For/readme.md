@@ -40,3 +40,7 @@ const valores = [
   [15, 12, 18, 10],
   [14, 9, 16, 11]
 ];
+
+
+
+Exercício 7: Calcule a soma de todos os números inteiros de 1 a 10 e armazene o resultado em uma variável chamada soma.
