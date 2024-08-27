@@ -25,81 +25,101 @@ const contatos = [
     {
         nome: "Carlos Silva",
         telefone: "(21) 97654-3210",
-        rua: "Avenida Brasil",
-        numero: 456,
-        bairro: "Centro",
+        endereco: {
+            rua: "Avenida Brasil",
+            numero: 456,
+            bairro: "Centro"
+        },
         dataNascimento: "22/07/1978"
     },
     {
         nome: "Fernanda Lima",
         telefone: "(31) 91234-5678",
-        rua: "Rua das Acácias",
-        numero: 789,
-        bairro: "Vila Nova",
+        endereco: {
+            rua: "Rua das Acácias",
+            numero: 789,
+            bairro: "Vila Nova"
+        },
         dataNascimento: "10/11/1990"
     },
     {
         nome: "João Pereira",
         telefone: "(41) 99876-5432",
-        rua: "Rua das Palmeiras",
-        numero: 321,
-        bairro: "Bairro Alto",
+        endereco: {
+            rua: "Rua das Palmeiras",
+            numero: 321,
+            bairro: "Bairro Alto"
+        },
         dataNascimento: "05/02/1982"
     },
     {
         nome: "Mariana Oliveira",
         telefone: "(51) 92345-6789",
-        rua: "Rua São Pedro",
-        numero: 654,
-        bairro: "São José",
+        endereco: {
+            rua: "Rua São Pedro",
+            numero: 654,
+            bairro: "São José"
+        },
         dataNascimento: "30/09/1988"
     },
     {
         nome: "Ricardo Mendes",
         telefone: "(61) 94567-8901",
-        rua: "Rua das Orquídeas",
-        numero: 987,
-        bairro: "Parque das Águas",
+        endereco: {
+            rua: "Rua das Orquídeas",
+            numero: 987,
+            bairro: "Parque das Águas"
+        },
         dataNascimento: "20/06/1975"
     },
     {
         nome: "Juliana Costa",
         telefone: "(71) 93012-3456",
-        rua: "Rua do Sol",
-        numero: 432,
-        bairro: "Alto da Boa Vista",
+        endereco: {
+            rua: "Rua do Sol",
+            numero: 432,
+            bairro: "Alto da Boa Vista"
+        },
         dataNascimento: "13/04/1995"
     },
     {
         nome: "Pedro Almeida",
         telefone: "(81) 96789-0123",
-        rua: "Avenida das Américas",
-        numero: 210,
-        bairro: "Jardim São Paulo",
+        endereco: {
+            rua: "Avenida das Américas",
+            numero: 210,
+            bairro: "Jardim São Paulo"
+        },
         dataNascimento: "08/12/1980"
     },
     {
         nome: "Camila Santos",
         telefone: "(91) 98712-3456",
-        rua: "Rua das Magnólias",
-        numero: 876,
-        bairro: "Jardim das Laranjeiras",
+        endereco: {
+            rua: "Rua das Magnólias",
+            numero: 876,
+            bairro: "Jardim das Laranjeiras"
+        },
         dataNascimento: "25/01/1987"
     },
     {
         nome: "Gabriel Rocha",
         telefone: "(11) 99823-4567",
-        rua: "Rua dos Cedros",
-        numero: 543,
-        bairro: "Vila das Oliveiras",
+        endereco: {
+            rua: "Rua dos Cedros",
+            numero: 543,
+            bairro: "Vila das Oliveiras"
+        },
         dataNascimento: "17/08/1992"
     },
     {
         nome: "Tatiane Lima",
         telefone: "(21) 98901-2345",
-        rua: "Rua das Samambaias",
-        numero: 678,
-        bairro: "Bosque dos Eucaliptos",
+        endereco: {
+            rua: "Rua das Samambaias",
+            numero: 678,
+            bairro: "Bosque dos Eucaliptos"
+        },
         dataNascimento: "12/10/1983"
     },
     {
@@ -122,8 +142,17 @@ const contatos = [
 
 // Bonus: Utilizar template string
 
-for (let i = 0; i < contatos.length; i++) {
+// for (let i = 0; i < contatos.length; i++) {
 
-    console.log(`Boa noite ${contatos[i].nome}, de número ${contatos[i].telefone} e que mora na rua ${contatos[i].endereco.rua}, ${contatos[i].numero}, ${contatos[i].bairro} com data de nascimento no dia ${contatos[i].dataNascimento}`)
+//     console.log(`Boa noite ${contatos[i].nome}, de número ${contatos[i].telefone} e que mora na rua ${contatos[i].endereco.rua}, ${contatos[i].endereco.numero}, ${contatos[i].endereco.bairro} com data de nascimento no dia ${contatos[i].dataNascimento}`)
     
+// }
+
+for (let i = 0; i < contatos.length; i++) {
+    const contato = contatos[i];
+    
+    // Verificar se o objeto endereco está definido
+    if (contato.endereco) {
+        console.log(`Boa noite ${contato.nome}, de número ${contato.telefone} e que mora na ${contato.endereco.rua}, ${contato.endereco.numero}, ${contato.endereco.bairro} com data de nascimento no dia ${contato.dataNascimento}`);
+    }
 }
