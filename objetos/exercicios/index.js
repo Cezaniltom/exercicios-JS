@@ -136,6 +136,9 @@
 //   ];
   
 
+
+
+
 // 2. Percorrendo a lista de contato
 
 // Crie um laço de repetição que percorra toda a lista de contatos e mostre uma frase contendo Nome, Telefone, Endereço e data de nascimento, exemplo:
@@ -148,6 +151,7 @@
 //         console.log(`Boa noite ${contatos[i].nome}, de número ${contatos[i].telefone} e que mora na ${contatos[i].endereco.rua}, ${contatos[i].endereco.numero}, ${contatos[i].endereco.bairro} com data de nascimento no dia ${contatos[i].dataNascimento}`);
     
 // }
+
 
 
 
@@ -198,18 +202,216 @@
 
 
 
-const texto = 'Ut interdum tellus sit amet arcu viverra facilisis. Mauris diam magna, condimentum ac justo nec, rhoncus iaculis odio. Sed tincidunt lacus ut risus laoreet sagittis. Curabitur tristique egestas libero, nec vulputate ligula pellentesque auctor. Mauris vitae est lacinia, condimentum felis eget, consequat eros. Proin tempor ligula felis, sit amet malesuada purus viverra sit amet. Nunc lobortis porta est a mattis. Curabitur congue tincidunt velit eu placerat. Aliquam sed urna pretium, laoreet ante nec, ultrices eros. Sed ullamcorper elit id dolor congue fringilla. Aenean fringilla sed risus ac consequat. Mauris turpis leo, volutpat eget varius sit amet, fermentum id lectus. Nunc quis gravida neque. Nulla eleifend risus diam, ut dictum mauris lobortis ut. Donec vitae nisi ullamcorper turpis accumsan malesuada a id mauris. Vestibulum aliquet tellus id purus consequat, eget vehicula erat porttitor. In hac habitasse platea dictumst. Nunc semper faucibus enim sit amet tristique. Quisque egestas, massa luctus laoreet porttitor, eros lorem semper enim, sed mattis turpis justo ut est. Proin ac elit tincidunt, lacinia est nec, ultrices purus. Quisque sem dui, commodo a dui consectetur, posuere accumsan orci. Maecenas luctus, nibh ac molestie ornare, mi odio placerat metus, vitae ornare lorem lectus a erat. Maecenas imperdiet, dui nec tincidunt sollicitudin, orci velit efficitur tortor, id interdum odio nibh nec sapien.'
+// const texto = 'Ut interdum tellus sit amet arcu viverra facilisis. Mauris diam magna, condimentum ac justo nec, rhoncus iaculis odio. Sed tincidunt lacus ut risus laoreet sagittis. Curabitur tristique egestas libero, nec vulputate ligula pellentesque auctor. Mauris vitae est lacinia, condimentum felis eget, consequat eros. Proin tempor ligula felis, sit amet malesuada purus viverra sit amet. Nunc lobortis porta est a mattis. Curabitur congue tincidunt velit eu placerat. Aliquam sed urna pretium, laoreet ante nec, ultrices eros. Sed ullamcorper elit id dolor congue fringilla. Aenean fringilla sed risus ac consequat. Mauris turpis leo, volutpat eget varius sit amet, fermentum id lectus. Nunc quis gravida neque. Nulla eleifend risus diam, ut dictum mauris lobortis ut. Donec vitae nisi ullamcorper turpis accumsan malesuada a id mauris. Vestibulum aliquet tellus id purus consequat, eget vehicula erat porttitor. In hac habitasse platea dictumst. Nunc semper faucibus enim sit amet tristique. Quisque egestas, massa luctus laoreet porttitor, eros lorem semper enim, sed mattis turpis justo ut est. Proin ac elit tincidunt, lacinia est nec, ultrices purus. Quisque sem dui, commodo a dui consectetur, posuere accumsan orci. Maecenas luctus, nibh ac molestie ornare, mi odio placerat metus, vitae ornare lorem lectus a erat. Maecenas imperdiet, dui nec tincidunt sollicitudin, orci velit efficitur tortor, id interdum odio nibh nec sapien.'
 
 
-let palavras = texto.split(" "); //SPLIT server para transformar as palavras da string em uma matriz, se remover o espaço dentro do split ele pega letra por letra
-let contador = new Map();
+// let palavras = texto.split(" "); //SPLIT server para transformar as palavras da string em uma matriz, se remover o espaço dentro do split ele pega letra por letra
+// let contador = new Map();
 
-for (let i = 0; i < palavras.length; i++) {
-    const palavra = palavras[i];
-    if(contador.has(palavra)) {
-        contador.set(palavra, contador.get(palavra) + 1);
-    } else {
-        contador.set(palavra, 1);
+// for (let i = 0; i < palavras.length; i++) {
+//     const palavra = palavras[i];
+//     if(contador.has(palavra)) {
+    //         contador.set(palavra, contador.get(palavra) + 1);
+    //     } else {
+//         contador.set(palavra, 1);
+//     }
+//     console.log({ contador });
+// }
+
+
+
+
+
+// 6. Procurando melhor aluno da escola
+
+// Dada a escola a seguir, cria um algoritmo que encontre qual o aluno que teve a melhor nota do ano:
+
+// Ao encontrar o aluno com a melhor média, printar o nome e a idade.
+
+// Bonus: printar o nome + idade + ano escolar.
+
+
+const escola = {
+    primeiroAno: [
+        { nome: "Ana Clara", idade: 7, notas: [8, 9, 7, 10] },
+        { nome: "Lucas Gabriel", idade: 7, notas: [7, 6, 8, 9] },
+        { nome: "Mariana Silva", idade: 7, notas: [10, 9, 8, 10] },
+        { nome: "João Pedro", idade: 7, notas: [6, 7, 7, 8] },
+        { nome: "Isabela Costa", idade: 7, notas: [9, 8, 9, 10] },
+        { nome: "Rafael Lima", idade: 7, notas: [8, 7, 7, 9] },
+        { nome: "Gabriela Souza", idade: 7, notas: [7, 6, 8, 8] },
+        { nome: "Miguel Alves", idade: 7, notas: [10, 9, 8, 9] }
+    ],
+    segundoAno: [
+        { nome: "Pedro Henrique", idade: 8, notas: [6, 7, 7, 8] },
+        { nome: "Julia Maria", idade: 8, notas: [9, 10, 9, 10] },
+        { nome: "Rafael Augusto", idade: 8, notas: [8, 7, 8, 9] },
+        { nome: "Carla Beatriz", idade: 8, notas: [7, 6, 7, 8] },
+        { nome: "Fernando José", idade: 8, notas: [8, 9, 7, 9] },
+        { nome: "Camila Oliveira", idade: 8, notas: [9, 10, 8, 9] },
+        { nome: "Vinícius Almeida", idade: 8, notas: [7, 7, 8, 8] },
+        { nome: "Sofia Santos", idade: 8, notas: [10, 9, 10, 10] }
+    ],
+    terceiroAno: [
+        { nome: "Carla Fernanda", idade: 9, notas: [8, 9, 7, 10] },
+        { nome: "Bruno Ricardo", idade: 9, notas: [7, 6, 8, 9] },
+        { nome: "Fernanda Lima", idade: 9, notas: [10, 9, 8, 10] },
+        { nome: "Thiago Azevedo", idade: 9, notas: [6, 7, 6, 8] },
+        { nome: "Laura Melo", idade: 9, notas: [9, 8, 9, 10] },
+        { nome: "Felipe Nunes", idade: 9, notas: [8, 8, 7, 9] },
+        { nome: "Isabel Cristina", idade: 9, notas: [7, 6, 7, 8] },
+        { nome: "Guilherme Borges", idade: 9, notas: [10, 9, 8, 9] }
+    ],
+    quartoAno: [
+        { nome: "Tiago Matos", idade: 10, notas: [6, 7, 6, 8] },
+        { nome: "Gabriela Costa", idade: 10, notas: [9, 10, 8, 10] },
+        { nome: "Felipe Silva", idade: 10, notas: [8, 8, 7, 9] },
+        { nome: "Larissa Campos", idade: 10, notas: [7, 6, 7, 8] },
+        { nome: "Leonardo Mendes", idade: 10, notas: [9, 9, 8, 9] },
+        { nome: "Bruna Ferreira", idade: 10, notas: [8, 7, 8, 8] },
+        { nome: "Caio Figueira", idade: 10, notas: [7, 8, 9, 7] },
+        { nome: "Daniel Rocha", idade: 10, notas: [10, 9, 10, 10] }
+    ],
+    quintoAno: [
+        { nome: "Laura Pereira", idade: 11, notas: [10, 9, 8, 10] },
+        { nome: "João Paulo", idade: 11, notas: [7, 7, 8, 9] },
+        { nome: "Isabela Costa", idade: 11, notas: [9, 8, 10, 9] },
+        { nome: "Mariana Lopes", idade: 11, notas: [8, 9, 7, 9] },
+        { nome: "Henrique Andrade", idade: 11, notas: [7, 6, 8, 8] },
+        { nome: "Letícia Barbosa", idade: 11, notas: [9, 10, 9, 10] },
+        { nome: "Rafaela Martins", idade: 11, notas: [8, 7, 7, 9] },
+        { nome: "Gustavo Almeida", idade: 11, notas: [10, 9, 8, 10] }
+    ],
+    sextoAno: [
+        { nome: "Lucas Fernandes", idade: 12, notas: [6, 7, 8, 7] },
+        { nome: "Sophia Rodrigues", idade: 12, notas: [10, 9, 8, 10] },
+        { nome: "Miguel Souza", idade: 12, notas: [8, 8, 7, 9] },
+        { nome: "Nicole Almeida", idade: 12, notas: [7, 7, 8, 9] },
+        { nome: "Rafael Costa", idade: 12, notas: [9, 8, 7, 8] },
+        { nome: "Mariana Oliveira", idade: 12, notas: [8, 9, 9, 10] },
+        { nome: "Gabriel Santos", idade: 12, notas: [7, 6, 8, 8] },
+        { nome: "Isabela Cardoso", idade: 12, notas: [10, 10, 9, 10] }
+    ],
+    setimoAno: [
+        { nome: "Maria Clara", idade: 13, notas: [9, 9, 8, 10] },
+        { nome: "Carlos Eduardo", idade: 13, notas: [7, 6, 8, 7] },
+        { nome: "Fernanda Souza", idade: 13, notas: [10, 9, 9, 10] },
+        { nome: "Tiago Silva", idade: 13, notas: [8, 7, 7, 8] },
+        { nome: "Beatriz Santos", idade: 13, notas: [9, 10, 9, 10] },
+        { nome: "João Vitor", idade: 13, notas: [7, 6, 8, 8] },
+        { nome: "Eduardo Almeida", idade: 13, notas: [8, 9, 7, 9] },
+        { nome: "Camila Ribeiro", idade: 13, notas: [10, 9, 8, 9] }
+    ],
+    oitavoAno: [
+        { nome: "Amanda Silva", idade: 14, notas: [8, 8, 9, 7] },
+        { nome: "Gustavo Ribeiro", idade: 14, notas: [6, 7, 8, 8] },
+        { nome: "Bruna Oliveira", idade: 14, notas: [10, 9, 10, 10] },
+        { nome: "Luana Costa", idade: 14, notas: [9, 8, 9, 9] },
+        { nome: "Henrique Souza", idade: 14, notas: [7, 7, 8, 8] },
+        { nome: "Manuela Santos", idade: 14, notas: [8, 9, 9, 10] },
+        { nome: "Vinícius Costa", idade: 14, notas: [6, 6, 7, 7] },
+        { nome: "Mariana Lima", idade: 14, notas: [10, 9, 10, 10] }
+    ],
+    nonoAno: [
+		    { nome: "Leonardo Rocha", idade: 15, notas: [9, 10, 8, 10] },
+		    { nome: "Luana Ribeiro", idade: 15, notas: [7, 7, 8, 9] },
+		    { nome: "Victor Silva", idade: 15, notas: [8, 8, 9, 10] },
+		    { nome: "Isabel Almeida", idade: 15, notas: [4, 5, 7, 1] },
+		    { nome: "Matheus Costa", idade: 15, notas: [9, 8, 7, 10] },
+		    { nome: "Julia Santos", idade: 15, notas: [8, 9, 9, 9] },
+		    { nome: "Thiago Oliveira", idade: 15, notas: [7, 6, 8, 7] },
+		    { nome: "Carolina Fernandes", idade: 15, notas: [10, 9, 8, 10] }
+		]
+	};
+
+
+
+    // let melhorAluno = 0;
+    // let melhorMedia = 0;
+
+    // let melhorAluno = null;
+    // let melhorMedia = -Infinity;
+
+    // // Percorre todos os anos escolares
+    // for (let ano in escola) {
+    //     let alunos = escola[ano];
+        
+    //     // Percorre todos os alunos de cada ano
+    //     for (let i = 0; i < alunos.length; i++) {
+    //         let aluno = alunos[i];
+            
+    //         // Calcula a média das notas diretamente aqui
+    //         let soma = 0;
+    //         for (let j = 0; j < aluno.notas.length; j++) {
+    //             soma += aluno.notas[j];
+    //         }
+    //         let media = soma / aluno.notas.length;
+            
+    //         // Verifica se a média do aluno é a maior encontrada até agora
+    //         if (media > melhorMedia) {
+    //             melhorMedia = media;
+    //             melhorAluno = { nome: aluno.nome, idade: aluno.idade, anoEscolar: ano }; // Adiciona o ano escolar ao aluno
+    //         }
+    //     }
+    // }
+
+    // // Imprime o aluno com a melhor média
+    // if (melhorAluno) {
+    //     console.log(`Nome: ${melhorAluno.nome}`);
+    //     console.log(`Idade: ${melhorAluno.idade}`);
+    //     console.log(`Ano Escolar: ${melhorAluno.anoEscolar}`);// Imprime o ano escolar como bônus
+    // } else {
+    //     console.log("Nenhum aluno encontrado.");
+    // }
+
+
+
+
+
+
+    const scoreCounter = new Map(); // Map para salvar a chave aluno com valor da média
+
+    for (var turma in escola) {
+    // laço no objeto escola
+
+    for (let i = 0; i < escola[turma].length; i++) {
+        // laço na lista turma
+
+        let soma = 0;
+        for (let n = 0; n < escola[turma][i].notas.length; n++) {
+        // laço nas notas do aluno
+        soma += escola[turma][i].notas[n];
+        }
+
+        const nome = escola[turma][i].nome;
+        const idade = escola[turma][i].idade;
+        const media = Number((soma / escola[turma][i].notas.length).toFixed(1));
+
+        scoreCounter.set(nome, {
+        media,
+        idade,
+        turma,
+        }); //salvando no Map o nome e media do aluno
     }
-    console.log({ contador });
-}
+    }
+
+    let maxValue = {
+    media: 0,
+    nome: "",
+    turma: "",
+    idade: 0,
+    };
+
+    for (const [key, value] of scoreCounter) {
+    // laço no Map para verificar qual a maior média
+    if (value.media > maxValue.media) {
+        maxValue = {
+        nome: key,
+        media: value.media,
+        turma: value.turma,
+        idade: value.idade,
+        };
+    }
+    }
+
+    console.log(maxValue);
