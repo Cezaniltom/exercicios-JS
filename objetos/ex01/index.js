@@ -142,17 +142,9 @@ const contatos = [
 
 // Bonus: Utilizar template string
 
-// for (let i = 0; i < contatos.length; i++) {
-
-//     console.log(`Boa noite ${contatos[i].nome}, de número ${contatos[i].telefone} e que mora na rua ${contatos[i].endereco.rua}, ${contatos[i].endereco.numero}, ${contatos[i].endereco.bairro} com data de nascimento no dia ${contatos[i].dataNascimento}`)
-    
-// }
 
 for (let i = 0; i < contatos.length; i++) {
-    const contato = contatos[i];
     
-    // Verificar se o objeto endereco está definido
-    if (contato.endereco) {
-        console.log(`Boa noite ${contato.nome}, de número ${contato.telefone} e que mora na ${contato.endereco.rua}, ${contato.endereco.numero}, ${contato.endereco.bairro} com data de nascimento no dia ${contato.dataNascimento}`);
-    }
+        console.log(`Boa noite ${contatos[i].nome}, de número ${contatos[i].telefone} e que mora na ${contatos[i].endereco.rua}, ${contatos[i].endereco.numero}, ${contatos[i].endereco.bairro} com data de nascimento no dia ${contatos[i].dataNascimento}`);
+    
 }
