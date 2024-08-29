@@ -1,39 +1,101 @@
 // Exercício Fácil
 // Escreva um programa em JavaScript que recebe uma cor em inglês e retorna o seu nome em português. As cores podem ser: "red" (vermelho), "blue" (azul), "green" (verde), "yellow" (amarelo) e "black" (preto).
 
-const color = 'black'
+// const color = 'black'
 
-switch (color) {
-    case 'red':
-        console.log('Vermelho')
-        break;
+// switch (color) {
+//     case 'red':
+//         console.log('Vermelho')
+//         break;
     
-    case 'blue':
-        console.log('Azul')
-        break;
+//     case 'blue':
+//         console.log('Azul')
+//         break;
     
-    case 'green':
-        console.log('Verde')
-        break;
+//     case 'green':
+//         console.log('Verde')
+//         break;
 
-    case 'yellow':
-        console.log('Amarelo')
-        break;
+//     case 'yellow':
+//         console.log('Amarelo')
+//         break;
 
-    case 'black':
-        console.log('Preto')
-        break;
+//     case 'black':
+//         console.log('Preto')
+//         break;
 
-    default:
-        console.log('Essa cor não é válida')
-        break;
-}
+//     default:
+//         console.log('Essa cor não é válida')
+//         break;
+// }
 
 
 
 
 // Exercício Moderado
 // Escreva um programa em JavaScript que recebe um número de 1 a 12 e retorna o mês correspondente. Caso seja um número inválido retorna "Número inválido.”
+
+// const mes = 0;
+
+// const mes = 3;
+
+// switch (mes) {
+//     case 1:
+//         console.log('Janeiro')
+//         break;
+        
+//     case 2:
+//         console.log('Fevereiro')
+//         break;
+
+//     case 3:
+//         console.log('Março')
+//         break;
+
+//     case 4:
+//         console.log('Abril')
+//         break;
+
+//     case 5:
+//         console.log('Maio')
+//         break;
+
+//     case 6:
+//         console.log('Junho')
+//         break;
+
+//     case 7:
+//         console.log('Julho')
+//         break;
+
+//     case 8:
+//         console.log('Agosto')
+//         break;
+
+//     case 9:
+//         console.log('Setembro')
+//         break;
+
+//     case 10:
+//         console.log('Outubro')
+//         break;
+
+//     case 11:
+//         console.log('Novembro')
+//         break;
+
+//     case 12:
+//         console.log('Dezembro')
+//         break;
+
+        
+
+//     default:
+
+//         console.log('Não é um valor válido')
+//         break;
+// }
+
 
 
 
