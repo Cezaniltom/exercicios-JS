@@ -48,18 +48,35 @@
 // Dica: um ano bissexto é divisível por 4, mas não por 100, a menos que também seja divisível por 400.
 
 
-// const bissexto = 2018
+// const bissexto = 2024
 
 // if(bissexto % 4 == 0 && bissexto % 100 != 0 ) {
-//     console.log('O número é divisivel')
+//     console.log('O ano é Bissexto')
 // } else {
-//     console.log('O número não é divisivel')
+//     console.log('O ano não é Bissexto')
 // }
 
 
 
 
 // Exercício Desafiador
-// Escreva um programa em JavaScript que verifica se um número é um *palíndromo*.
+// Escreva um programa em JavaScript que verifica se um número é um palíndromo.
 
-// Obs: Um *palíndromo* é um número que permanece o mesmo quando seus dígitos
+// Obs: Um palíndromo é um número que permanece o mesmo quando seus dígitos
+
+
+// const palindromo = 1234321;
+// const palindromoString = palindromo.toString();
+
+
+// if(palindromoString.length === 7) {
+
+//     if(palindromoString[0] === palindromoString[6] && palindromoString[1] === palindromoString[5] && palindromoString[2] === palindromoString[4]){
+//         console.log('O número é palíndromo');
+//     } else {
+//         console.log('O número não é palíndromo');
+//     }
+
+// } else {
+//     console.log('O número não é de 6 digitos');
+// }
