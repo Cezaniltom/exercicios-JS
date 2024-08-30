@@ -35,7 +35,6 @@
 // Exercício Moderado
 // Escreva um programa em JavaScript que recebe um número de 1 a 12 e retorna o mês correspondente. Caso seja um número inválido retorna "Número inválido.”
 
-// const mes = 0;
 
 // const mes = 3;
 
@@ -105,6 +104,31 @@
 // Escreva um programa em JavaScript que recebe uma letra do alfabeto e retorna se é uma vogal ou uma consoante.
 
 
+// let alfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+// let letraInformada = 'u';
+
+
+// for (let i = 0; i < alfabeto.length; i++) {
+    
+//     if (alfabeto[i] === letraInformada) {
+        
+//         switch (letraInformada) {
+//             case 'a':
+//             case 'e':
+//             case 'i':
+//             case 'o':
+//             case 'u':
+//                 console.log('A letra informada é uma vogal');
+//                 break;
+//             default:
+//                 console.log('A letra informada é uma consoante');
+//                 break;
+//         }
+//     }
+// }
+
+
 
 
 
@@ -117,7 +141,7 @@
 
 
 
-// Exercício Desafiado
+// Exercício Desafiador
 // Escreva um programa em JavaScript que recebe um número de 1 a 7 e retorna o dia da semana correspondente. 
 // Além disso, implemente uma verificação adicional utilizando `if-else` para retornar "Fim de semana" caso o número seja 1 ou 7 (domingo ou sábado), e "Dia útil" caso contrário.
 
