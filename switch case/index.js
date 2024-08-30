@@ -137,22 +137,24 @@
 // **Exemplo de uso:** `calculadora(5, 3, "somar")` deve retornar 8.
 
 
-function calculadora(num1, num2, operacao) {
-    switch (operacao) {
-        case "somar":
-            return num1 + num2;
-        case "subtrair":
-            return num1 - num2;
-        case "multiplicar":
-            return num1 * num2;
-        case "dividir":
-            return num1 / num2;
-        default:
-            return "Operação inválida.";
-    }
-}
+// function calculadora(num1, num2, operacao) {
+//     switch (operacao) {
+//         case "somar":
+//             return num1 + num2;
+//         case "subtrair":
+//             return num1 - num2;
+//         case "multiplicar":
+//             return num1 * num2;
+//         case "dividir":
+//             return num1 / num2;
+//         default:
+//             return "Operação inválida.";
+//     }
+// }
 
-console.log(calculadora(2, 1, "dividir"));
+// console.log(calculadora(2, 1, "dividir"));
+
+
 
 
 // Exercício Desafiador
@@ -162,3 +164,42 @@ console.log(calculadora(2, 1, "dividir"));
 // **Exemplo de uso:** `verificarDiaSemana(3)` deve retornar "Quarta-feira, Dia útil".
 
 // **Dica:** Utilize os valores de 1 a 7 para representar os dias da semana, sendo 1 para domingo, 2 para segunda-feira e assim por diante.
+
+
+
+let diaSemana = 7;
+
+switch (diaSemana) {
+    case 1:
+        diaSemana = 'Domingo'
+        break;
+    case 2:
+        diaSemana = 'Segunda-feira'
+        break;
+    case 3:
+        diaSemana = 'Terça-feira'
+        break;
+    case 4:
+        diaSemana = 'Quarta-feira'
+        break;
+    case 5:
+        diaSemana = 'Quinta-feira'
+        break;
+    case 6:
+        diaSemana = 'Sexta-feira'
+        break;
+    case 7:
+        diaSemana = 'Sábado'
+        break;
+    default: 
+        break;
+}
+    
+if (diaSemana == 'Domingo' || diaSemana == 'Sábado') {
+    console.log(`${diaSemana}, Fim de semana`)
+} else if (diaSemana >= 8 || diaSemana <= 0 ){
+    console.log('Valor inválido')
+} else {
+    console.log(`${diaSemana}, Dia útil`)
+}
+
