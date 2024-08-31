@@ -167,7 +167,7 @@
 
 
 
-let diaSemana = 7;
+let diaSemana = 1;
 
 switch (diaSemana) {
     case 1:
