@@ -15,11 +15,11 @@
 // Escreva um programa em JavaScript que calcule a soma dos números de 1 a 100 utilizando um loop while. Imprima o resultado no final.
 
 
-let soma = 0;   // Variável para armazenar a soma
-let i = 1;      // Variável para o contador
+let soma = 0;
+let i = 1;
 
-do {
-    soma += i;  // Adiciona o valor de i à soma
-    i++;        // Incrementa o contador
-    console.log(i, soma);  // Imprime o resultado
-} while (i < 100);  // Continua enquanto i for menor ou igual a 100
+while (i < 100) {
+    soma += i;
+    console.log(`a soma de ${i} + ${soma} é, ${soma + i}`);
+    i++;
+}; 
