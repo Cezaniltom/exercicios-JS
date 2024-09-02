@@ -48,9 +48,9 @@
 // Dica: um ano bissexto é divisível por 4, mas não por 100, a menos que também seja divisível por 400.
 
 
-// const bissexto = 2024
+// const bissexto = 2156
 
-// if(bissexto % 4 == 0 && bissexto % 100 != 0 ) {
+// if(bissexto % 4 == 0 && bissexto % 100 != 0 || bissexto % 400 == 0) {
 //     console.log('O ano é Bissexto')
 // } else {
 //     console.log('O ano não é Bissexto')

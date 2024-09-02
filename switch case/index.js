@@ -36,61 +36,46 @@
 // Escreva um programa em JavaScript que recebe um número de 1 a 12 e retorna o mês correspondente. Caso seja um número inválido retorna "Número inválido.”
 
 
-// const mes = 3;
+// let mes = 3;
 
 // switch (mes) {
 //     case 1:
 //         console.log('Janeiro')
 //         break;
-        
 //     case 2:
 //         console.log('Fevereiro')
 //         break;
-
 //     case 3:
 //         console.log('Março')
 //         break;
-
 //     case 4:
 //         console.log('Abril')
 //         break;
-
 //     case 5:
 //         console.log('Maio')
 //         break;
-
 //     case 6:
 //         console.log('Junho')
 //         break;
-
 //     case 7:
 //         console.log('Julho')
 //         break;
-
 //     case 8:
 //         console.log('Agosto')
 //         break;
-
 //     case 9:
 //         console.log('Setembro')
 //         break;
-
 //     case 10:
 //         console.log('Outubro')
 //         break;
-
 //     case 11:
 //         console.log('Novembro')
 //         break;
-
 //     case 12:
 //         console.log('Dezembro')
-//         break;
-
-        
-
+//         break;       
 //     default:
-
 //         console.log('Não é um valor válido')
 //         break;
 // }
@@ -106,8 +91,7 @@
 
 // let alfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-// let letraInformada = 'u';
-
+// let letraInformada = 'v';
 
 // for (let i = 0; i < alfabeto.length; i++) {
     
@@ -167,39 +151,39 @@
 
 
 
-let diaSemana = 7;
+// let diaSemana = 7;
 
-switch (diaSemana) {
-    case 1:
-        diaSemana = 'Domingo'
-        break;
-    case 2:
-        diaSemana = 'Segunda-feira'
-        break;
-    case 3:
-        diaSemana = 'Terça-feira'
-        break;
-    case 4:
-        diaSemana = 'Quarta-feira'
-        break;
-    case 5:
-        diaSemana = 'Quinta-feira'
-        break;
-    case 6:
-        diaSemana = 'Sexta-feira'
-        break;
-    case 7:
-        diaSemana = 'Sábado'
-        break;
-    default: 
-        break;
-}
+// switch (diaSemana) {
+//     case 1:
+//         diaSemana = 'Domingo'
+//         break;
+//     case 2:
+//         diaSemana = 'Segunda-feira'
+//         break;
+//     case 3:
+//         diaSemana = 'Terça-feira'
+//         break;
+//     case 4:
+//         diaSemana = 'Quarta-feira'
+//         break;
+//     case 5:
+//         diaSemana = 'Quinta-feira'
+//         break;
+//     case 6:
+//         diaSemana = 'Sexta-feira'
+//         break;
+//     case 7:
+//         diaSemana = 'Sábado'
+//         break;
+//     default: 
+//         break;
+// }
     
-if (diaSemana == 'Domingo' || diaSemana == 'Sábado') {
-    console.log(`${diaSemana}, Fim de semana`)
-} else if (diaSemana >= 8 || diaSemana <= 0 ){
-    console.log('Valor inválido')
-} else {
-    console.log(`${diaSemana}, Dia útil`)
-}
+// if (diaSemana == 'Sábado' || diaSemana == 'Domingo') {
+//     console.log(`${diaSemana}, Fim de semana`)
+// } else if (diaSemana >= 8 || diaSemana <= 0 ){
+//     console.log('Valor inválido')
+// } else {
+//     console.log(`${diaSemana}, Dia útil`)
+// }
 
