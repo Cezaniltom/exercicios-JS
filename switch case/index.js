@@ -157,37 +157,37 @@
 let diaSemana = 1;
 >>>>>>> 7b8965e4e4ca575d1800c52b7cc1bd5e600f56a5
 
-// switch (diaSemana) {
-//     case 1:
-//         diaSemana = 'Domingo'
-//         break;
-//     case 2:
-//         diaSemana = 'Segunda-feira'
-//         break;
-//     case 3:
-//         diaSemana = 'Terça-feira'
-//         break;
-//     case 4:
-//         diaSemana = 'Quarta-feira'
-//         break;
-//     case 5:
-//         diaSemana = 'Quinta-feira'
-//         break;
-//     case 6:
-//         diaSemana = 'Sexta-feira'
-//         break;
-//     case 7:
-//         diaSemana = 'Sábado'
-//         break;
-//     default: 
-//         break;
-// }
+switch (diaSemana) {
+    case 1:
+        diaSemana = 'Domingo'
+        break;
+    case 2:
+        diaSemana = 'Segunda-feira'
+        break;
+    case 3:
+        diaSemana = 'Terça-feira'
+        break;
+    case 4:
+        diaSemana = 'Quarta-feira'
+        break;
+    case 5:
+        diaSemana = 'Quinta-feira'
+        break;
+    case 6:
+        diaSemana = 'Sexta-feira'
+        break;
+    case 7:
+        diaSemana = 'Sábado'
+        break;
+    default: 
+        break;
+}
     
-// if (diaSemana == 'Sábado' || diaSemana == 'Domingo') {
-//     console.log(`${diaSemana}, Fim de semana`)
-// } else if (diaSemana >= 8 || diaSemana <= 0 ){
-//     console.log('Valor inválido')
-// } else {
-//     console.log(`${diaSemana}, Dia útil`)
-// }
+if (diaSemana == 'Sábado' || diaSemana == 'Domingo') {
+    console.log(`${diaSemana}, Fim de semana`)
+} else if (diaSemana >= 8 || diaSemana <= 0 ){
+    console.log('Valor inválido')
+} else {
+    console.log(`${diaSemana}, Dia útil`)
+}
 
