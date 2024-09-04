@@ -151,11 +151,7 @@
 
 
 
-<<<<<<< HEAD
-// let diaSemana = 7;
-=======
 let diaSemana = 1;
->>>>>>> 7b8965e4e4ca575d1800c52b7cc1bd5e600f56a5
 
 switch (diaSemana) {
     case 1:
