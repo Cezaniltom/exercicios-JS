@@ -261,36 +261,36 @@
 
 
 
-let meuCarro = {make: 'Honda', model: 'Accord', year: 1998};
+// let meuCarro = {make: 'Honda', model: 'Accord', year: 1998};
 
 
-function minhaFuncao(objeto) {
+// function minhaFuncao(objeto) {
     
-    objeto.make = 'Toyota'
-    objeto.year = 2002  
-}
+//     objeto.make = 'Toyota'
+//     objeto.year = 2002  
+// }
 
-minhaFuncao(meuCarro)
-console.log(meuCarro)
-
-
+// minhaFuncao(meuCarro)
+// console.log(meuCarro)
 
 
-const pessoas = [
-    { nome: "João", idade: 25, cidade: "São Paulo" },
-    { nome: "Maria", idade: 30, cidade: "Rio de Janeiro" },
-    { nome: "Pedro", idade: 28, cidade: "Belo Horizonte" }
-  ];
 
-pessoas.push({ nome: "teste", idade: 25, cidade: "São Paulo" })
 
-// console.log(pessoas)
+// const pessoas = [
+//     { nome: "João", idade: 25, cidade: "São Paulo" },
+//     { nome: "Maria", idade: 30, cidade: "Rio de Janeiro" },
+//     { nome: "Pedro", idade: 28, cidade: "Belo Horizonte" }
+//   ];
 
-function teste (pessoa) {
-    console.log(pessoa)
-}
+// pessoas.push({ nome: "teste", idade: 25, cidade: "São Paulo" })
 
-teste(pessoas[3])
+// // console.log(pessoas)
+
+// function teste (pessoa) {
+//     console.log(pessoa)
+// }
+
+// teste(pessoas[3])
 
 
 
